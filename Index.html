@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- link inserindo fonte NUNITO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+
+    <!-- link img na barra do navegador-->
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "Imagens/TechFIT-Logo.png"/>
+
+    <!-- Link dos Icones-->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Link Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <title>TechFit</title>
+</head>
+<body>
+    <header id="header">
+        <a id="logo" href="#banner_home"><img src="Imagens/TechFIT-Logo.png" width="150" height="50" alt=""></a>
+        <nav id="nav">
+            <button id="btn-mobile"><span id="hamburguer"></span></button>
+            <ul id="menu">
+                <li><a href="#banner_home"><b>HOME</b></a></li>
+                <li><a href="#about"><b>SOBRE</b></a></li>
+                <li><a href="#IMC"><b>IMC</b></a></li>
+                <li><a href="#planos"><b>PLANOS</b></a></li>
+                <li><a href="#mapa"><b>LOCALIZAÇÃO</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section class="banner_home" id="banner_home">
+        <div>
+            <img src="Imagens/BannerTechFIT.png" width="100%">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about_title">
+            <h1><b>QUEM SOMOS?</b></h1>
+        </div>
+        <div class="about_text">
+            <p>A TechFIT é uma academia moderna e inovadora que oferece aos seus clientes uma experiência única de treinamento físico.</p>
+            <p>Com equipamentos de última geração e profissionais altamente qualificados, a TechFIT é o lugar ideal para quem busca resultados reais em sua jornada de condicionamento físico.</p>
+            <p>Venha conhecer a TechFIT e descubra como podemos ajudá-lo a atingir seus objetivos de forma eficiente e prazerosa.</p>
+        </div>
+
+        <div class="container">
+            <h1><b>CONFIRA NOSSO ESPAÇO ABAIXO</b></h1>
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <img class="img-fluid mb-4 rounded" src="Imagens/imgTechFit-Interior.png" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <img class="img-fluid mb-4 rounded" src="Imagens/imgTechFit-Interior2.png" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <img class="img-fluid mb-4 rounded" src="Imagens/imgTechFit-Interior3.png" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <img class="img-fluid mb-4 rounded" src="Imagens/imgTechFit-Interior4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="IMC" id="IMC">
+        <div class="IMC_title">
+            <h1><b>ÍNDICE DE MASSA CORPORAL (IMC)</b></h1>
+        </div>
+        <div class="IMC_text">
+            
+                <p>Índice de Massa Corporal ou IMC, trata-se de uma medida do peso de cada pessoa, sendo uma relação entre a massa e altura da pessoa ao quadrado.</p>
+                <p>A partir desse cálculo é possível avaliar se a pessoa está com um peso ideal, se está abaixo ou acima do peso. Tanto níveis abaixo, como níveis acima do peso ideal, podem oferecer riscos à saúde do indivíduo.</p>
+                <p>Utilize abaixo nossa calculadora de IMC para descobrir o seu:</p>
+            
+        </div>
+        <section class="IMC_calc">
+            <div>
+                <h1>CALCULADORA<br>IMC</h1>
+            </div>
+
+            <div class="text_input">
+                <p><b>ALTURA (CM)</b></p>
+            </div>
+
+            <div class="input_campo">
+                <input type="number" id="altura" placeholder="ALTURA (CM):"/>
+            </div>
+
+            <div class="text_input">
+                <p><b>PESO (KG)</b></p>
+            </div>
+
+            <div class="input_campo">
+                <input type="number" id="peso" placeholder="PESO (KG):"/>
+            </div>
+
+            
+            <button id="btn_calcular"><b>CALCULAR</b></button>
+            
+            <div class="text_input">
+                <p><b>RESULTADO</b></p>
+            </div>
+            <textarea style="resize: none;" readonly  id="resultado" name="resultado"></textarea>
+        </section>
+    </section>
+
+    <section class="planos" id="planos">
+        <div class="container">
+            <div class="planos_title">
+                <h1><b>NOSSOS PLANOS</b></h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-5" id="col1">
+                    <div class="plano1_title">
+                        <h2>PLANO<br>TECHFIT</h2>
+                    </div>
+                
+                    <div class="lista_plano">
+                        <ul style="list-style: none;">
+                            <li>SOMENTE UMA UNIDADE TECHFIT</li>
+                            <li>SEM TAXA DE CANCELAMENTO</li>
+                            <li>SEM RESTRIÇÃO DE HORÁRIOS</li>
+                            <br>
+                        </ul>
+                    </div>
+
+                    <div class="valor_plano1">
+                        <h2><i>R$ 129,90 /MÊS</i></h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-10 col-lg-5" id="col2">
+                    <div class="plano2_title">
+                        <h2>PLANO<br>TECHFIT PREMIUM</h2>
+                    </div>
+
+                    <div class="lista_plano">
+                        <ul style="list-style: none;">
+                            <li>ACESSO A TODAS UNIDADES TECHFIT</li>
+                            <li>12 MESES DE FIDELIDADE</li>
+                            <li>LEVE AMIGOS PARA TREINAR</li>
+                            <li>SEM RESTRIÇÃO DE HORÁRIOS</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="valor_plano2">
+                        <h2><i>R$ 159,90 /MÊS</i></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa" class="mapa">
+        <div class="mapa_title">
+            <h1><b>LOCALIZAÇÃO</b></h1>
+        </div>
+        <div class="mapa_img">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1293.4130355936006!2d-46.728331828057975!3d-23.52082792218458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1686665562112!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="#banner_home"><img src="Imagens/TechFIT-Logo.png" alt=""></a>
+                </div>
+                <div class="col-sm">
+                    <p>© Copyright Todos os direitos reservados TechFIT</p>
+                    <p>Site by Pedro Antonio | Rodrigo Araujo</p>
+                </div>
+                <div class="col-sm">
+                    <a href="https://www.linkedin.com/in/pedro-ams/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/orodrigoaraujo/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/arthur-guerra-a731bb253//" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- scrip menu hamburguer -->
+    <script src="menu.js"></script>
+
+    <!-- script NAV fixa no topo-->
+    <script src="navbar_fixa.js"></script>
+
+    <!-- script calculadora de IMC-->
+    <script src="calcimc.js"></script>
+
+    <!-- scripts bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

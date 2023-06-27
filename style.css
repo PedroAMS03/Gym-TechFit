@@ -1,0 +1,279 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+body, ul{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+#menu a{
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    color: #000000;
+    padding: .5rem;
+    
+}
+
+#menu a:hover{
+    color: #FF7800;
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+    
+}
+
+#header{
+    box-sizing: border-box;
+    height: 100px;
+    padding: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width: 800px){
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background-color: #ffffff;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: calc(50vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a:hover{
+        color: #FF7800;
+        transform: none;
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid #000000;
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    #hamburguer:hover{
+        color: #FF7800;
+    }
+    #hamburguer{
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+.about{
+    font-family: 'Nunito', sans-serif;
+    background-color: #000000;
+    
+}
+.about_title{
+    padding-top: 50px;
+    color: #FF7800;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.about_text{
+    color: #ffffff;
+    padding-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.about img{
+    border: 2px solid #FF7800;
+}
+
+.about .container h1{
+    color: #FF7800;
+    text-align: center;
+}
+
+.IMC{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding-bottom: 50px;
+}
+.IMC_title{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #FF7800;
+}
+.IMC_text{
+    text-align: center;
+    padding-bottom: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+}
+.IMC_calc{
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #FF7800;
+    border: 2px solid #FF7800;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/** REMOÇÃO DOS BOTÕES DO INPUT ALTURA E PESO **/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.text_input{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+input[type="number"] {
+    width: 350px; 
+    height: 50px;
+    border-radius: 10px;
+}
+
+textarea{
+    text-align: center;
+    width: 350px; height: 80px;
+    border-radius: 15px;
+}
+#btn_calcular{
+    font-family: 'Nunito', sans-serif;
+    border: 2px solid #FF7800;
+    border-radius: 50px;
+    background-color: #00000000;
+    color: #FF7800;
+    margin: 20px;
+    padding: 10px;
+}
+#btn_calcular:hover{
+    background-color:#FF7800;
+    color: #000000;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.planos{
+    font-family: 'Nunito', sans-serif;
+    background-color: #000000;
+}
+
+.planos_title{
+    color: #FF7800;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#col1, #col2{
+    color: #FF7800;
+    border: 2px solid #FF7800;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 5px;
+}
+
+.lista_plano{
+    color: #ffffff;
+    text-align: center;
+}
+
+.mapa{
+    font-family: 'Nunito', sans-serif;
+    background-color: #000000;
+    text-align: center;
+}
+.mapa_title{
+    color: #FF7800;
+    padding-top: 50px;
+}
+.mapa_img{
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.mapa_img iframe{
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    border-radius: 25px;
+    border: 3px solid #FF7800;
+    
+}
+
+.rodape{
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FF7800 100%); */
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.rodape .container img{
+    height:45px;
+}
+.rodape .container p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+}
+
+.planos .row{
+    display: flex;
+    justify-content: center;
+}
